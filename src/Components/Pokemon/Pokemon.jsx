@@ -1,9 +1,13 @@
-function Pokemon({name,image}){
+import './pokemon.css'
+
+
+function pokemon({name, image}){
 
     return(
+        <div className='pokemon'>
+        <div className='pokemon-name'>{name}</div>
         <div>
-        <div>{name}</div>
-        <div><img src ={image}  /> </div>
+            <img className='pokemon-image' src ={image}  /> </div>
         
         
         </div>
@@ -13,4 +17,4 @@ function Pokemon({name,image}){
 
 }
 
-export default Pokemon;
+export default pokemon;
